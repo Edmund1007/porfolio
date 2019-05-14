@@ -10,6 +10,7 @@
 
 <!doctype html>
 <html lang="en">
+  {% load staticfiles %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -85,9 +86,10 @@
     <div class="container">
       <h1 class="jumbotron-heading">我的主页</h1>
       <p class="lead text-muted">我的主页信息</p>
+      <img src="{% static "snow.jpg" %}" width=20%>
       <p>
         <a href="blog/" class="btn btn-primary my-2">我的博客</a>
-        <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        <a href="{% static "resume.pdf" %}" class="btn btn-secondary my-2">我的简历</a>
       </p>
     </div>
   </section>
